@@ -18,7 +18,8 @@
   "node-red": {
     "nodes": {
       "say-text": "lib/nodes/say-text/say-text.js",
-      "vector-connection": "lib/nodes/vector-connection/vector-connection.js"
+      "vector-connection": "lib/nodes/vector-connection/vector-connection.js",
+      "events": "lib/nodes/events/events.js"
     }
   },
   "author": "Daryl Stultz",
