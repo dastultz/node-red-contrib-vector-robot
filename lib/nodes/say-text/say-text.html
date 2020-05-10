@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType("say-text", {
+        category: "vector robot",
+        color: "#98CF8D",
+        defaults: {
+            name: { value: "" },
+            vector: { value: "", type: "vector-connection" },
+        },
+        icon: "font-awesome/fa-comment-o",
+        label: function () {
+            return this.name || "say-text";
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="say-text">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-vector"><i class="icon-tag"></i> Vector</label>
+        <input id="node-input-vector">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="say-text">
+    <p>Sends message payload to Vector to be spoken.</p>
+</script>
