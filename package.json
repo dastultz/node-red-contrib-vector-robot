@@ -20,7 +20,8 @@
       "say-text": "lib/nodes/say-text/say-text.js",
       "vector-connection": "lib/nodes/vector-connection/vector-connection.js",
       "events": "lib/nodes/events/events.js",
-      "battery-state": "lib/nodes/battery-state/battery-state.js"
+      "battery-state": "lib/nodes/battery-state/battery-state.js",
+      "animation": "lib/nodes/animation/animation.js"
     }
   },
   "author": "Daryl Stultz",
