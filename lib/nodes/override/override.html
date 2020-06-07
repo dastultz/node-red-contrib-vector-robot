@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType("override", {
+        category: "vector robot",
+        color: "#98CF8D",
+        defaults: {
+            name: { value: "" },
+            vector: { value: "", type: "vector-connection" },
+        },
+        icon: "font-awesome/fa-lock",
+        inputs: 1,
+        outputs: 1,
+        label: function () {
+            return this.name || "override";
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="override">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-vector"><i class="icon-tag"></i> Vector</label>
+        <input id="node-input-vector">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="override">
+    <p>
+        Take high-priority control over Vector.
+        You don't typically need this as the various commands will take and release control as needed.
+        You might use this to keep Vector quiet and still all night.
+        Automatic behaviors are disabled.
+        Use with caution.
+    </p>
+</script>

@@ -21,7 +21,9 @@
       "vector-connection": "lib/nodes/vector-connection/vector-connection.js",
       "events": "lib/nodes/events/events.js",
       "battery-state": "lib/nodes/battery-state/battery-state.js",
-      "animation": "lib/nodes/animation/animation.js"
+      "animation": "lib/nodes/animation/animation.js",
+      "override": "lib/nodes/override/override.js",
+      "release": "lib/nodes/release/release.js"
     }
   },
   "author": "Daryl Stultz",
