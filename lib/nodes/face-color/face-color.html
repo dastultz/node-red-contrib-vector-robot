@@ -1,0 +1,54 @@
+<script type="text/javascript">
+    RED.nodes.registerType("face-color", {
+        category: "vector robot",
+        color: "#98CF8D",
+        defaults: {
+            name: { value: "" },
+            vector: { value: "", type: "vector-connection" },
+            red: { value: 0, validate: RED.validators.number() },
+            green: { value: 0, validate: RED.validators.number() },
+            blue: { value: 0, validate: RED.validators.number() },
+            duration: { value: 10, validate: RED.validators.number() },
+        },
+        icon: "font-awesome/fa-paint-brush",
+        inputs: 1,
+        outputs: 1,
+        label: function () {
+            return this.name || "face-color";
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="face-color">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-red"><i class="fa fa-tag"></i> Red</label>
+        <input type="text" id="node-input-red" placeholder="1.0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-green"><i class="fa fa-tag"></i> Green</label>
+        <input type="text" id="node-input-green" placeholder="1.0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-blue"><i class="fa fa-tag"></i> Blue</label>
+        <input type="text" id="node-input-blue" placeholder="1.0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-duration"><i class="fa fa-tag"></i> Duration</label>
+        <input type="text" id="node-input-duration" placeholder="1.0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-vector"><i class="icon-tag"></i> Vector</label>
+        <input id="node-input-vector">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="face-color">
+    <p>
+        Set a solid color to make Vector's face.
+        You'll probably want to "override" behavior first, otherwise Vector may interrupt with his normal eye movement.
+    </p>
+</script>

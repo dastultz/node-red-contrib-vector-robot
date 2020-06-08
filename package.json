@@ -23,7 +23,8 @@
       "battery-state": "lib/nodes/battery-state/battery-state.js",
       "animation": "lib/nodes/animation/animation.js",
       "override": "lib/nodes/override/override.js",
-      "release": "lib/nodes/release/release.js"
+      "release": "lib/nodes/release/release.js",
+      "face-color": "lib/nodes/face-color/face-color.js"
     }
   },
   "author": "Daryl Stultz",
