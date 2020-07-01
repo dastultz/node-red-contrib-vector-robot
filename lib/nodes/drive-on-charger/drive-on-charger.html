@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType("drive-on-charger", {
+        category: "vector robot",
+        color: "#98CF8D",
+        defaults: {
+            name: { value: "" },
+            vector: { value: "", type: "vector-connection" },
+        },
+        icon: "font-awesome/fa-home",
+        inputs: 1,
+        outputs: 1,
+        label: function () {
+            return this.name || "drive-on-charger";
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="drive-on-charger">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-vector"><i class="icon-tag"></i> Vector</label>
+        <input id="node-input-vector">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="drive-on-charger">
+    <p>Tell Vector to drive on the charger.</p>
+</script>

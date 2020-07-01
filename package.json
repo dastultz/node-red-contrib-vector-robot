@@ -24,7 +24,9 @@
       "animation": "lib/nodes/animation/animation.js",
       "override": "lib/nodes/override/override.js",
       "release": "lib/nodes/release/release.js",
-      "face-color": "lib/nodes/face-color/face-color.js"
+      "face-color": "lib/nodes/face-color/face-color.js",
+      "drive-on-charger": "lib/nodes/drive-on-charger/drive-on-charger.js",
+      "drive-off-charger": "lib/nodes/drive-off-charger/drive-off-charger.js"
     }
   },
   "author": "Daryl Stultz",
